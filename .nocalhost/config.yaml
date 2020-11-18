@@ -1,0 +1,8 @@
+preInstalls:
+
+appConfig:
+  name: depscloud
+  type: helm
+  resourcePath: charts/depscloud
+
+svcConfigs:
