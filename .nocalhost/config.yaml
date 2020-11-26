@@ -6,3 +6,13 @@ appConfig:
   resourcePath: charts/depscloud
 
 svcConfigs:
+  - name: depscloud-extractor
+    type: deployment
+    gitUrl: https://github.com/depscloud/depscloud
+    devEnv: node  # java|go|node|php
+    devImage: node:10
+    sync: 
+    - .:/home/nocalhost-dev
+    ignore: []
+    devPort:
+    - 8080:8080
