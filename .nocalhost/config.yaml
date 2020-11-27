@@ -12,7 +12,7 @@ svcConfigs:
     devEnv: node  # java|go|node|php
     devImage: node:10
     sync: 
-    - .:/home/nocalhost-dev
+    - .
     ignore: []
     devPort:
     - 8080:8080
